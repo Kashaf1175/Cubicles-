@@ -1,0 +1,145 @@
+/* Base Footer Styles */
+.foot {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 40px 0;
+  border-top: 1px solid #e9ecef;
+  width: 100%;
+  overflow: hidden; /* Prevents any overflow beyond viewport */
+}
+
+.footer .contai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+.footer .contai div {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.footer .contai div h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.footer .contai div p,
+.footer .contai div a {
+  font-size: 14px;
+  color: #6c757d;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer .contai div a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  padding-left: 90px;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+}
+
+.footer .social-icons a {
+  color: #6c757d;
+  margin: 0 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  color: #343a40;
+}
+
+.footer .copyright {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.footer .logo img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer .badges img {
+  max-width: 50px;
+  margin: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footer .contai {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px; /* Reduces padding for small screens */
+  }
+  
+  .footer .contai div {
+    margin: 20px 0;
+    width: 100%; /* Makes divs take full width on smaller screens */
+  }
+
+  .footer .social-icons {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .links {
+    padding-left: 0;
+  }
+
+  .footer .contai div h3 {
+    font-size: 16px;
+  }
+
+  .footer .contai div p,
+  .footer .contai div a,
+  .footer .social-icons a {
+    font-size: 14px;
+  }
+
+  .footer .logo img {
+    max-width: 120px;
+  }
+
+  .footer .badges img {
+    max-width: 40px;
+  }
+}
+
+/* Global Reset to Ensure No Extra Space on Mobile */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Ensures no horizontal scrolling */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

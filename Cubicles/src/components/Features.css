@@ -1,0 +1,161 @@
+/* Base Styles */
+.feat {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: block;
+}
+
+.headers {
+  text-align: center;
+  line-height: 1;
+}
+
+.headers h1 {
+  font-size: 33px;
+  color: #333333;
+}
+
+.headers h2 {
+  font-size: 36px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resources {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.resource-item {
+  width: 18%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resource-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.resource-item p {
+  font-size: 14px;
+  color: #333333;
+  margin: 10px 0;
+}
+
+.resource-item a {
+  font-size: 14px;
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.resource-item a i {
+  margin-left: 5px;
+}
+
+.cta-section {
+  background-color: #f0f4f8;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-section h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.cta-section button {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 57px;
+  width: 240px;
+  padding: 14px 25px;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .resource-item {
+    width: 45%; /* Adjusts layout for tablets */
+  }
+
+  .cta-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cta-section h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headers h1 {
+    font-size: 28px;
+  }
+
+  .headers h2 {
+    font-size: 30px;
+  }
+
+  .resources {
+    padding: 30px;
+  }
+
+  .resource-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cta-section h3 {
+    font-size: 20px;
+  }
+
+  .cta-section button {
+    width: 200px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headers h1, .headers h2 {
+    font-size: 24px;
+  }
+
+  .cta-section {
+    padding: 20px;
+  }
+
+  .cta-section h3 {
+    font-size: 18px;
+  }
+
+  .cta-section button {
+    width: 180px;
+    font-size: 14px;
+  }
+}

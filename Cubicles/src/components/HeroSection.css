@@ -1,0 +1,147 @@
+/* General Styles */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: normal;
+  background-color: #FFFFFF;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 60px;
+  text-align: left;
+  font-weight: normal;
+  box-sizing: border-box; /* Ensures padding is contained */
+}
+
+.text-content1 {
+  max-width: 500px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.text-content1 h6 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+.text-content1 .highlighter {
+  color: #007bff;
+}
+
+.text-content1 p {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 20px 0;
+  line-height: 1.7;
+}
+
+.text-content1 .but {
+  display: inline-block;
+  justify-content: left;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1A335B;
+  box-shadow: 0px 4px 49px 0px #00000026;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-content1 img {
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto;
+  margin-left: 70px;
+}
+
+/* Responsive Styles */
+
+/* For devices with width between 1024px and 768px */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 40px;
+  }
+
+  .text-content1 {
+    font-size: 18px;
+  }
+
+  .text-content1 h6 {
+    font-size: 36px;
+  }
+
+  .image-content1 img {
+    margin-left: 50px;
+  }
+}
+
+/* For tablet and below (iPad Mini portrait and other tablets) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-content1 {
+    max-width: 100%;
+    text-align: center; /* Center text content on mobile */
+    font-size: 18px; /* Smaller font size for better readability */
+  }
+
+  .text-content1 h6 {
+    font-size: 32px;
+  }
+
+  .text-content1 p {
+    font-size: 16px;
+  }
+
+  .image-content1 img {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 90%; /* Ensures image scales properly */
+  }
+}
+
+/* For smaller devices (up to 480px, smaller than iPhone) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .text-content1 h6 {
+    font-size: 28px;
+  }
+
+  .text-content1 p {
+    font-size: 14px;
+  }
+
+  .text-content1 .but {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .image-content1 img {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
