@@ -1,0 +1,114 @@
+/* General Styles */
+.nav {
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+  text-overflow: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  height: 79px;
+  background-color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-btn {
+  background-color: #0650a0;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  height: 33px;
+  font-size: 15px;
+  border: none;
+  box-shadow: 0px 4px 40px 0px #0000001A;
+}
+
+.logo {
+  height: auto;
+  width: 181px;
+  height: 50px;
+}
+
+a:hover {
+  color: #0b5cb3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 20px;
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    width: 150px; /* Adjust logo size for smaller screens */
+    height: 40px;
+  }
+
+  nav a {
+    margin: 0px 10px;
+  }
+
+  .contact-btn {
+    font-size: 14px;
+    padding: 7px 12px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center;
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px;
+    font-size: 1rem; /* Further reduce font size on small devices */
+  }
+
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 1rem; /* Adjust link font size for smaller screens */
+  }
+
+  .contact-btn {
+    font-size: 14px;
+    height: 35px;
+  }
+}

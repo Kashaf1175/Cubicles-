@@ -1,0 +1,146 @@
+/* General Styles */
+.serv {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.containers {
+    max-width: 1200px;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+h5 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service.active {
+    border: 1px solid #007bff;
+}
+
+.service i {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.pagination .dots {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination .dots span {
+    width: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pagination .dots span.active {
+    background-color: #007bff;
+}
+
+.pagination .page-info {
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #666;
+    display: flex;
+    justify-content: right;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .service {
+        width: 30%; /* Adjust width for medium screens */
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        justify-content: center;
+        gap: 15px; /* Reduce gap between services */
+    }
+
+    .service {
+        width: 45%; /* Two items per row on smaller screens */
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+
+    .pagination {
+        flex-direction: column; /* Stack pagination dots on small screens */
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        width: 100%; /* Single item per row on extra-small screens */
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    .pagination .page-info {
+        font-size: 0.8em; /* Adjust pagination text size */
+    }
+
+    .service:hover {
+        transform: scale(1.02); /* Slightly smaller hover effect on mobile */
+    }
+}
+
