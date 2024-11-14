@@ -12,7 +12,7 @@ function Footer() {
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
      </p>
      <div class="badges">
-      <img alt="Google Partner Badge" height="50" src="https://storage.googleapis.com/a1aa/image/YDM7drAE59oQA5Uyh0Ryt97yRn4SVfuHYk6NnbZhrAUgHr3JA.jpg" width="50"/>
+      <img alt="Google Partner Badge" height="60" src="https://storage.googleapis.com/a1aa/image/YDM7drAE59oQA5Uyh0Ryt97yRn4SVfuHYk6NnbZhrAUgHr3JA.jpg" width="50"/>
       <img alt="Another Badge" height="50" src="https://storage.googleapis.com/a1aa/image/OdzCisKQrWqJGd25gkj9umbkAaoOk3uQLEB7haLzoFlwj17E.jpg" width="50"/>
      </div>
     </div>
