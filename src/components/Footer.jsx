@@ -42,7 +42,7 @@ function Footer() {
       Areas We Serve
      </a>
     </div>
-    <div class="contact">
+    <div class="contact" href="#contact">
      <h3>
       Contact us
      </h3>

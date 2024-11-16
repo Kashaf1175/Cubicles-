@@ -3,7 +3,7 @@
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; 
   color: #333;
 }
 
@@ -13,13 +13,13 @@
 }
 
 .title {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: normal;
   margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -125,21 +125,23 @@
   margin: 0 auto;
   padding: 20px 0;
   padding-top: 70px;
-  line-height: 1.5;
+  
 }
 
-h2 {
+.co h2 {
   text-align: center;
   color: #333;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 30px;
+  line-height: 0.6;
 }
 
-h3 {
+.co h3 {
   text-align: center;
   color: #000;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 34px;
+  line-height: 1;
 }
 
 .case-study {
@@ -149,11 +151,13 @@ h3 {
   margin: 20px 0;
   overflow: hidden;
   margin-top: 60px;
+  
 }
 
 .case-study img {
   width: 50%;
   object-fit: cover;
+
 }
 
 .case-study-content {
@@ -167,16 +171,22 @@ h3 {
 .case-study-content h4 {
   margin: 0;
   color: #333;
+  line-height: 2;
+  
 }
 
 .case-study-content p {
-  color: #666;
+  color: #333;
   margin: 10px 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.3;
 }
 
 .read-more {
   color: #007bff;
   text-decoration: none;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -274,4 +284,83 @@ h3 {
   .case-study-content h4 {
     font-size: 20px;
   }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply Animations */
+
+/* Testimonial Section Animation */
+.testimonial {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Carousel Arrows Animation */
+.carousel .arrow {
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Profiles Animation */
+.profile {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Case Study Animation */
+.case-study {
+  animation: zoomIn 1s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-study:hover {
+  transform: scale(1.02); /* Subtle zoom effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Smoothly animate the carousel profiles */
+.carousel .profiles {
+  display: flex;
+  animation: fadeIn 1.5s ease-in-out;
+}
+/* Profile Hover Effect */
+.profile:hover {
+  transform: scale(1.1); /* Slight zoom */
+  transition: transform 0.3s ease;
+}
+
+/* Arrow Hover Effect */
+.carousel .arrow:hover {
+  transform: translateX(5px); /* Slight nudge on hover */
+  transition: transform 0.3s ease;
 }

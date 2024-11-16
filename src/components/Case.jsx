@@ -1,7 +1,7 @@
 import React from 'react';
-import './Testimonials.css';
+import './Case.css';
 
-function Testimonials() {
+function TrustedCompanies() {
   return (
     <div className='testi'>
     <div class="boxes">
@@ -117,14 +117,14 @@ function Testimonials() {
      <p>
       Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.
      </p>
-     <a class="read-more" href="#">
+     <a class="read-more" href="#about">
       Read more &gt;
      </a>
     </div>
    </div>
   
   <div class="case-study">
-  <img src="c3.png" alt="" />
+  <img src="c3.png" alt="" /> 
     <div class="case-study-content">
       
      <h4>
@@ -141,7 +141,8 @@ function Testimonials() {
   </div>
   </div>
     </div>
+
   );
 }
 
-export default Testimonials;
+export default TrustedCompanies;

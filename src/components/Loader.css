@@ -1,4 +1,33 @@
-header .header {
+html, body {
+  height: 100%;
+}
+
+body {
+  background: black;
+  min-height: 100%;
+ 
+  margin: 0;
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, -1000px);
+  }
+}
+
+.loader-container {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.bubble-wrap {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  header .header {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
@@ -107,8 +136,7 @@ nav {
 
 @media (max-width: 480px) {
   .logo {
-    height: 60px;
-    padding: 5px; /* Smaller logo for tiny devices */
+    height: 60px; /* Smaller logo for tiny devices */
   }
 
   .nav-links {
@@ -127,3 +155,21 @@ nav {
     font-size: 1rem;
   }
 }
+
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  perspective: 600px;
+}
+
+.bubble {
+  position: absolute;
+  background: black;
+  opacity: 0.7;
+  border-radius: 50%;
+  animation: move 3s infinite;
+}
+
+/* Generate 100 bubbles with random sizes, positions, and colors */
+.bubble:nth-child(1) { width: 20px; height: 20px; animation-delay: -0.2s; transform: translate3d(100px, 200px, 800px); background: hsl(50, 70%, 50%); }
+.bubble:nth-child(2) { width: 30px; height: 30px; animation-delay: -0.4s; transform: translate3d(400px, 100px, 1200px); background: hsl(120, 70%, 50%); }
+/* Add similar rules for nth-child(3) to nth-child(100) */

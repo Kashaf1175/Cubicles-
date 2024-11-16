@@ -1,12 +1,15 @@
 import React from 'react';
-import './HeroSection.css';
+import './About.css';
 
-function HeroSection() {
+
+function About() {
   return (
-  <div className="body">
+    
+  <div className="body body-enhanced">
+    
   <div className="container">
    <div className="text-content1">
-   <h6>
+   <h6 className="enhanced-hover">
     Great&nbsp;
    <span className='highlighter'>Software&nbsp;
    </span>
@@ -15,21 +18,21 @@ function HeroSection() {
    <b>Built by Great&nbsp;</b>
    <span className='highlighter'><b>teams</b></span>
    </ h6>
-    <p>
-     We help build and manage a team of world-class developers to bring your vision to life
+    <p className="text-content1 enhanced-hover">
+    We help build and manage a team of world-class developers to bring your vision to life
     </p>
     
-    <a className="but" href="#">
+    <a className="but enhanced-button" href="#">
      Let's get started!
     </a>
     </div>
    <div className="image-content1">
-    <img src="Hero-Wrapper__image.png" alt="" />
+    <img className="enhanced-hover" src="Hero-Wrapper__image.png" alt="" />
        </div>
   </div>
   </div>
    
   );
-}
+} 
 
-export default HeroSection;
+export default About;

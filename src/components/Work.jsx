@@ -72,7 +72,8 @@ function Work() {
             </div>
         </div>
     </div>
-    </div>
+    
+    </div> 
   )
 }
 

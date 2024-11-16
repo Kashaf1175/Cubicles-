@@ -1,9 +1,15 @@
 /* App.css */
-.App {
+ /* .App {
     font-family: sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
   }
-  
+  */
+  .App {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Features.css';
+import './Hire.css';
 
 function Features() {
   return (

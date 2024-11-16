@@ -10,18 +10,7 @@ function Services() {
   // ];
 
   return (
-    // <section className="services">
-    //   <h2>Our Services</h2>
-    //   <div className="service-list">
-    //     {services.map((service, index) => (
-    //       <div className="service" key={index}>
-    //         <h3>{service.title}</h3>
-    //         <p>{service.description}</p>
-    //       </div>
-          
-    //     ))}
-    //   </div>
-      <div className='serv'>
+    <div className='serv'>
     <div class="containers">
         <h5>Services we offer</h5>
         <div class="services">
@@ -63,7 +52,7 @@ function Services() {
             </div>
         </div>
     </div>
-    </div>
+    </div> 
     
   );
 }

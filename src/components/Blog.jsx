@@ -1,5 +1,5 @@
 import React from 'react';
-import './CaseStudies.css';
+import './Blog.css';
 
 function CaseStudies() {
   return (
@@ -7,7 +7,7 @@ function CaseStudies() {
     <div className='way'>
     <div class="container2">
      <div class="hand">
-      <h1>
+      <h1> 
        Way of building
       </h1>
       <h2>
@@ -30,7 +30,7 @@ function CaseStudies() {
          "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
         </p>
          <div class="author">
-          <img src="peopl.png" alt="" srcset="" />
+          <img src="pep.png" alt="" />
           <div>
           <div class="name">
            Jeewa Markram
@@ -53,10 +53,10 @@ function CaseStudies() {
         <h3>
          Build the right team to scale
         </h3>
-        <p>
+        <p className='fir'>
          Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers).
         </p>
-        <p>
+        <p className='sec'>
          Our delivery model helps you cut costs and deliver within budget.
         </p>
         <p class="quote">
@@ -124,13 +124,13 @@ function CaseStudies() {
        <div class="card">
         <img alt="Icon representing UX Driven Engineering" height="40" src="https://storage.googleapis.com/a1aa/image/cc1E2VDeR2SgMyS8oK2vnKNe57cNIneflHNebeH82EpUdRe3JA.jpg" width="40"/>
         <div>
-         <h3>
+         <h3> 
           UX Driven Engineering
          </h3>
          <p>
-          Unlike other companies, we are a
+          Unlike other companies, we are a&nbsp;
           <span class="highlight">
-           UX first
+           UX first&nbsp;
           </span>
           development company. Projects are driven by designers and they make sure design and experiences translate to code.
          </p>
@@ -143,9 +143,9 @@ function CaseStudies() {
           Proven Experience and Expertise
          </h3>
          <p>
-          Unlike other companies, we are a
+          Unlike other companies, we are a &nbsp;
           <span class="highlight">
-           UX first
+           UX first &nbsp;
           </span>
           development company. Projects are driven by designers and they make sure design and experiences translate to code.
          </p>
@@ -158,9 +158,9 @@ function CaseStudies() {
           Code Reviews
          </h3>
          <p>
-          Unlike other companies, we are a
+          Unlike other companies, we are a&nbsp;
           <span class="highlight">
-           UX first
+           UX first&nbsp;
           </span>
           development company. Projects are driven by designers and they make sure design and experiences translate to code.
          </p>
@@ -177,9 +177,9 @@ function CaseStudies() {
           Developing Shared Understanding
          </h3>
          <p>
-          Unlike other companies, we are a
+          Unlike other companies, we are a&nbsp;
           <span class="highlight">
-           UX first
+           UX first&nbsp;
           </span>
           development company. Projects are driven by designers and they make sure design and experiences translate to code.
          </p>
@@ -192,9 +192,9 @@ function CaseStudies() {
           Security &amp; Intellectual Property (IP)
          </h3>
          <p>
-          Unlike other companies, we are a
+          Unlike other companies, we are a&nbsp;
           <span class="highlight">
-           UX first
+           UX first&nbsp;
           </span>
           development company. Projects are driven by designers and they make sure design and experiences translate to code.
          </p>
@@ -207,9 +207,9 @@ function CaseStudies() {
           Quality Assurance &amp; Testing
          </h3>
          <p>
-          Unlike other companies, we are a
+          Unlike other companies, we are a&nbsp;
           <span class="highlight">
-           UX first
+           UX first&nbsp;
           </span>
           development company. Projects are driven by designers and they make sure design and experiences translate to code.
          </p>

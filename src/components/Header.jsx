@@ -3,20 +3,26 @@ import './Header.css';
 
 function Header() {
   return (
-    <div className='nav'> 
     <header className="header">
-      <img className='logo' src="logo.png" alt="" srcset="" width="181" height="50"/>
+      <img className="logo" src="logo1.png" alt="Logo" />
+      <p>Cubicles Tech</p>
       <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#services">Case Studies</a>
-        <a href="#features">Blog</a>
-        <a href="#contact">How it Works</a>
-        <a href="#contact">Hire</a> 
+        <ul className="nav-links">
+          <li><a href="#about">About us</a></li> {/* Link to Hero Section */}
+          <li><a href="#services">Services</a></li> {/* Link to Services Section */}
+          {/* <li><a href="#trusted-companies">Trusted Companies</a></li> Link to Trusted Companies Section */}
+          <li><a href="#case-studies">Case Studies</a></li> {/* Link to Case Studies Section */}
+          <li><a href="#blog">Blog</a></li> {/* Link to Testimonials Section */}
+          <li><a href="#work">How it Works</a></li> {/* Link to Work Section */}
+          <li><a href="#hire">Hire</a></li> {/* Link to Features Section */}
+          
+           {/* Link to Contact Section */}
+        </ul>
       </nav>
-      <button className="contact-btn">Contact Us</button>
+      
+      <button className="contact-btn"><a href="#contact">Contact</a></button>
+      
     </header>
-    </div>
   );
 }
 

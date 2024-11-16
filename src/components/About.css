@@ -24,6 +24,10 @@
   box-sizing: border-box; /* Ensures padding is contained */
 }
 
+p {
+  font-weight: bold;
+  font-size: 23px;
+}
 .text-content1 {
   max-width: 500px;
   text-align: left;
@@ -39,9 +43,9 @@
 }
 
 .text-content1 .highlighter {
-  color: #007bff;
+  color: #213f70;
 }
-
+ 
 .text-content1 p {
   font-size: 18px;
   color: #6c757d;
@@ -67,6 +71,54 @@
   max-width: 100%; /* Ensures images are responsive */
   height: auto;
   margin-left: 70px;
+}
+
+/* Add animations to body without modifying the existing body */
+.body-enhanced {
+  animation: fadeIn 1s ease-in; /* Add fade-in effect on load */
+}
+
+/* Additional hover effect for headings */
+.text-content1 h6.enhanced-hover:hover {
+  color: #1A335B; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Enhanced hover for paragraphs */
+.text-content1.enhanced-hover p:hover {
+  transform: translateY(-5px); /* Slight upward movement */
+  opacity: 0.9; /* Slightly dim */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth effect */
+}
+
+/* Enhanced button hover effects */
+.text-content1 .but.enhanced-button:hover {
+  background-color: #213f70; /* Lighter blue */
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Enhanced image hover effects */
+.image-content1 img.enhanced-hover {
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Add hover animations */
+}
+
+.image-content1 img.enhanced-hover:hover {
+  transform: scale(1.05); /* Slight zoom */
+  opacity: 0.9; /* Slight dim effect */
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Styles */
@@ -145,3 +197,4 @@
     margin-top: 15px;
   }
 }
+
