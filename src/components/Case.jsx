@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Case.css';
 
 function TrustedCompanies() {
-  return (
-    <div className='testi'>
-    <div class="boxes">
+
+  useEffect(() => {
+    const services = document.querySelectorAll('.service');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in');
+          }
+        });
+      },
+      { threshold: 0.2 } // Trigger when 20% of the element is visible
+    );
+
+    services.forEach((service) => observer.observe(service));
+
+    return () => {
+      services.forEach((service) => observer.unobserve(service));
+    };
+  }, []);
+
+  return ( 
+    
+    <div className='testi body-enhanced'>
+    <div class="boxes ">
      <div class="title">
       Why customers love
      </div>

@@ -6,18 +6,21 @@ body, html {
 }
 
 /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Explicitly set white background */
+    color: #333;
+}
 .way {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #ffffff;
 }
 
 /* Container Styles */
 .container2 {
-    width: 80%; /* Default container width for larger screens */
+    width: 90%;
+    max-width: 1240px; /* Adjust container width */
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .hand {
@@ -26,457 +29,137 @@ body, html {
 }
 
 .hand h1, .hand h2 {
-    font-size: 34px;
-    color: black;
+    font-size: 2rem;
+    color: #333;
     margin: 0;
-    font-weight: normal;
-    line-height: 2;
+    line-height: 1.5;
 }
 
+/* Content Styling */
 .content {
     display: flex;
-    
+    flex-direction: column; /* Default to column layout */
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Box Styling */
 .boxs {
-    width: 600px; /* Default box width for larger screens */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.content .boxs {
-    width: 1500px;
+    background: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-}
-
-.content .boxs img {
-    width: 450px;
-    height: 400px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: right;
+    width: 100%;
+    max-width: 600px;
     padding: 20px;
 }
 
-.content .boxs h3 {
-    font-size: 28px;
-    line-height: 3;
-    color: #333333;
-    margin: 20px 0 0;
-    text-align: left;
-    font-weight: bold;
+.boxs img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.content .boxs p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #333333;
-    font-weight: normal;
-}
-
-.content .boxs .quote {
-    font-style: italic;
-    font-size: 18px;
-    color: #007bff;
+.boxs h3 {
+    font-size: 1.5rem;
+    color: #333;
     margin: 10px 0;
 }
 
-.content .boxs .author {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+.boxs p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
 }
 
-.content .boxs .author img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
+/* Responsive Media Queries */
 
-.content .boxs .author .name {
-    font-size: 18px;
-    color: #333333;
-    font-weight: bold;
-}
-
-.content .boxs .author .title {
-    font-size: 12px;
-    color: #333333;
-}
-
-/* Design Section */
-.design {
-    font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
-    margin: 0;
-    padding: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Main Container */
-.main-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.container3 {
-    width: 50%;
-}
-
-h4, h2 {
-    font-size: 34px;
-    color: #333;
-    text-align: center;
-    font-weight: normal;
-    margin: 10px;
-}
-
-h2 {
-    font-weight: bold;
-    
-}
-h4 {
-    line-height: 1;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    height: 220px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.card img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-
-.card h3 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-    text-align: left;
-}
-
-.card p {
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 1.3;
-    color: #666;
-    margin: 5px 0 0 0;
-    text-align: left;
-}
-
-.highlight {
-    color: #007bff;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For Screens Larger than 1024px (Laptops, Desktops) */
+/* Larger Screens (1024px and above) */
 @media (min-width: 1024px) {
     .container2 {
-        width: 80%;
+        background-color: #ffffff;
     }
-
     .content {
-        flex-wrap: wrap;
+        flex-direction: row; 
+        /* Ensure column layout remains */
     }
-
     .boxs {
-        width: 45%; /* Set box width to 45% for two columns on larger screens */
+        width: 400px;
+        height: 1000px;
     }
-
-    .boxs img {
+    .content .boxs {
         width: 100%;
-        height: auto;
-    }
-
-    .grid {
-        gap: 20px;
     }
 }
 
-/* For Tablet View (768px and below) */
-@media (max-width: 768px) {
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
     .container2 {
-        width: 90%;
-    }
-
-    .content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center;
+        width: 95%;
     }
 
     .boxs {
         width: 100%;
         max-width: 600px;
-        padding: 15px;
-        margin-bottom: 20px;
     }
+}
 
-    .boxs img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .boxs h3 {
+/* Mobile (Below 768px) */
+@media (max-width: 768px) {
+    .hand h1, .hand h2 {
         font-size: 1.5rem;
     }
 
-    .boxs p {
-        font-size: 1rem;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 280px;
-        margin: 10px auto;
-    }
-
-    .grid {
-        gap: 15px;
-    }
-}
-
-/* For Mobile View (480px and below) */
-@media (max-width: 480px) {
-    /* .container2 {
-        margin: 10px;
-    }
-
-    .hand h1, .hand h2 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-
     .content {
-        width: 10px;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 15px;
-        padding: 10px;
-        flex-wrap: nowrap;
-    }
-
-    .boxs {
-        height: 900px;
-        flex-direction: column;
-        align-items: center;
-        max-width: 150px;
-        padding: 10px;
-        margin-bottom: 15px;
-        box-shadow: none
-    }
-
-    .boxs img {
-        width: 150px;
-        margin-bottom: 10px;
-        margin-right: 10px;
-    }
-
-    .boxs h3 {
-        font-size: 1.2rem;
-    }
-
-    .boxs p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-  */
-  .content {
-    flex-direction: column;
-    width: 500px;
-    
-  }
-  
-  .boxs {
-    flex-direction: column;
-    width: 100px;
-    padding: 15px;
-}
-
-.boxs img {
-    width: 100%;
-    max-width: 250px;
-}
-
-.boxs h3 {
-    font-size: 18px;
-}
-
-.boxs p {
-    font-size: 14px;
-    
-}
-
-.boxs .author img {
-    width: 30px;
-    height: 30px;
-}
-
-.boxs .author .name {
-    font-size: 12px;
-}
-
-.boxs .author .title {
-    font-size: 10px;
-}
-    .card {
-        width: 350px;
-        padding: 35px;
-        margin: 10px auto;
-        flex-direction: column;
-        
-        height: 300px;
-        gap: 35px;
-        
-    }
-    .grid {
         flex-direction: column;
         gap: 20px;
     }
-    .main-container {
-        flex-direction: column;
-        margin: 0 120px 0 60px;
-        
+
+    .boxs {
+        width: 100%;
+        padding: 15px;
     }
 
-    .card h3 {
+    .boxs h3 {
+        font-size: 1.25rem;
+    }
+
+    .boxs p {
+        font-size: 0.95rem;
+    }
+
+    .boxs .author img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .boxs .author .name {
+        font-size: 0.875rem;
+    }
+
+    .boxs .author .title {
+        font-size: 0.75rem;
+    }
+}
+
+/* Small Mobile (Below 480px) */
+@media (max-width: 480px) {
+    .hand h1, .hand h2 {
+        font-size: 1.2rem;
+    }
+
+    .boxs {
+        padding: 10px;
+    }
+
+    .boxs h3 {
         font-size: 1rem;
     }
 
-    .card p {
-        font-size: 1rem;
+    .boxs p {
+        font-size: 0.875rem;
     }
-
-}
-
-/* Keyframe Animations */
-
-/* Fade In Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Slide In from Left */
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Slide In from Right */
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Hover Zoom */
-@keyframes hoverZoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.05);
-    }
-}
-/* Apply Fade In to Titles and Subtitles */
-.title, .subtitle, .testimonial {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-.title {
-    animation-delay: 0.3s;
-}
-
-.subtitle {
-    animation-delay: 0.6s;
-}
-
-.testimonial {
-    animation-delay: 0.9s;
-}
-
-/* Apply Slide In to Carousel Arrows */
-.carousel .arrow {
-    opacity: 0;
-    animation: slideInLeft 1s forwards;
-}
-
-.carousel .arrow:last-child {
-    animation: slideInRight 1s forwards;
-    animation-delay: 1s;
-}
-
-/* Apply Fade In to Profiles */
-.profile {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-    animation-delay: 1.2s;
-}
-
-/* Apply Fade In to Case Studies */
-.case-study {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-    animation-delay: 1.5s;
-}
-
-/* Hover Zoom Effect for Boxes and Cards */
-.boxs:hover, .card:hover {
-    animation: hoverZoom 0.3s forwards;
 }

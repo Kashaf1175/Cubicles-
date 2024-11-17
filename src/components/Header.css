@@ -3,10 +3,17 @@ header .header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+.heads {
+  position: sticky;
 }
 
 /* Header Container */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   flex-wrap: wrap; /* Allows wrapping for small screens */
   align-items: center; /* Vertically center all elements */
@@ -15,6 +22,7 @@ header .header {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
 }
 
 /* Logo */

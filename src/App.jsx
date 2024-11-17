@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Case from './components/Case';
 import Blog from './components/Blog';
+import Desi from './components/Desi';
 import Work from './components/Work';
 import Hire from './components/Hire';
 import Footer from './components/Footer';
@@ -43,6 +44,9 @@ function App() {
 
       <section id="blog">
         <Blog />
+      </section>
+      <section id='des'>
+        <Desi />
       </section>
 
       <section id="work">

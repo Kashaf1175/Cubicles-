@@ -72,6 +72,7 @@
   height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
+  opacity: 0.5;
 }
 
 .profile .name {
@@ -172,13 +173,13 @@
   margin: 0;
   color: #333;
   line-height: 2;
-  
+  font-size: 30px;
 }
 
 .case-study-content p {
   color: #333;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.3;
 }

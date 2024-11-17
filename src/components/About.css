@@ -10,6 +10,7 @@
   font-weight: normal;
   background-color: #FFFFFF;
   overflow-x: hidden; /* Prevents horizontal scrolling */
+  /* animation: 3s infinite alternate slide-in; */
 }
 
 .container {
@@ -22,6 +23,7 @@
   text-align: left;
   font-weight: normal;
   box-sizing: border-box; /* Ensures padding is contained */
+  animation: 3s cubic-bezier(1, 0, 0, 1) slide-in;
 }
 
 p {

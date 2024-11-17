@@ -3,6 +3,7 @@ import './Header.css';
 
 function Header() {
   return (
+    <div className='heads'>
     <header className="header">
       <img className="logo" src="logo1.png" alt="Logo" />
       <p>Cubicles Tech</p>
@@ -23,6 +24,7 @@ function Header() {
       <button className="contact-btn"><a href="#contact">Contact</a></button>
       
     </header>
+    </div>
   );
 }
 
