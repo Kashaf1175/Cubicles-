@@ -22,12 +22,13 @@ header .header {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 110px;
   
 }
 
 /* Logo */
 .logo {
-  height: 85px;
+  height: 50px;
   width: auto; /* Maintains aspect ratio */
 }
 
@@ -70,9 +71,10 @@ nav {
 .contact-btn {
   padding: 10px 20px;
   color: #fff;
-  background-color: #213f70;
+  background: linear-gradient(225deg, #0093FF 0%, #F1428C 100%);
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 }
 
 .contact-btn a {

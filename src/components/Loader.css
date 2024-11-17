@@ -16,7 +16,7 @@ body {
 }
 
 .loader-container {
-  position: relative;
+  position: absolute;
   width: 100%;
   min-height: 100%;
   transform-style: preserve-3d;
@@ -25,8 +25,8 @@ body {
 
 .bubble-wrap {
   margin: 0 auto;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   header .header {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -39,11 +39,12 @@ body {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping for small screens */
   align-items: center; /* Vertically center all elements */
-  justify-content: space-between; /* Spread out logo, nav, and button */
+  justify-content: center; /* Spread out logo, nav, and button */
   padding: 20px;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
 }
 
 /* Logo */
@@ -64,6 +65,7 @@ nav {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap; /* Wrap links on small screens */
   gap: 20px; /* Add spacing between links */
 }
