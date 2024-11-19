@@ -2,12 +2,20 @@ import React from 'react';
 import './Header.css';
 
 function Header() {
+
+  
   return (
     <div className='heads'>
     <header className="header">
       <img className="logo" src="flogo.png" alt="Logo" />
-      <p>Cubicles Technology</p>
+      <p>Cubicles Tech</p>
+      
       <nav>
+      <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
         <ul className="nav-links">
           <li><a href="#about">About us</a></li> {/* Link to Hero Section */}
           <li><a href="#services">Services</a></li> {/* Link to Services Section */}

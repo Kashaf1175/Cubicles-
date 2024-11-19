@@ -4,11 +4,16 @@ body, html {
     padding: 0;
     box-sizing: border-box;
 }
-
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px auto;
+  }
 /* Global Styles */
 .design {
     font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+    background: linear-gradient(225deg, #91cffc 0%, #faa4c8 100%);
     padding: 70px 20px;
     display: flex;
     flex-direction: column;

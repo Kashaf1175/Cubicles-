@@ -3,14 +3,14 @@
     font-family: Arial, sans-serif;
     background-color: #f8f9fc;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
 } 
 
 .containers {
     max-width: 1200px;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     margin: auto;
     /* animation: 3s ease-in 1s 2 reverse both paused slide-in; */
@@ -18,17 +18,17 @@
 
   
 
-h5 {
+.containers h5 {
     font-size: 35px;
-    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .services {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
     gap: 20px;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .service {
@@ -36,7 +36,7 @@ h5 {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 20px;
-    width: 22%;
+    width: 24%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -80,7 +80,7 @@ h5 {
     display: flex;
     gap: 5px;
 }
-
+ 
 .pagination .dots span {
     width: 10px;
     height: 10px;

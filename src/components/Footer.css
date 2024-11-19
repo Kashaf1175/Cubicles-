@@ -7,7 +7,7 @@
 }
 
 .footer {
-  background-color: #ffffff;
+  background: linear-gradient(225deg, #a5d7fc 0%, #faa4c8 100%);
   padding: 40px 0;
   border-top: 1px solid #e9ecef;
   width: 100%;
@@ -34,13 +34,13 @@
 .footer .contai div h3 {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #343a40;
+  color: #373c41;
 }
 
 .footer .contai div p,
 .footer .contai div a {
   font-size: 14px;
-  color: #6c757d;
+  color: #575a5e;
   text-decoration: none;
   margin-bottom: 10px;
   display: block;
@@ -69,12 +69,15 @@
   color: #343a40;
 }
 
-.footer .copyright {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #6c757d;
+.footer  .copyright p{
+  margin-top: 20px;
+  height: 1px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #3c3d3f;
   text-align: center;
 }
+
 
 .footer .logo img {
   max-width: 150px;
@@ -82,9 +85,10 @@
 }
 
 .footer .badges img {
-  max-width: 50px;
+  max-width: 150px;
   margin: 5px;
 }
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {

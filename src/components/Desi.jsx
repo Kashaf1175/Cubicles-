@@ -4,6 +4,7 @@ import './Desi.css'
 function des() {
   return (
     <div className='design'>
+      <div className='line'></div>
     <h4>
      Our design and
     </h4>

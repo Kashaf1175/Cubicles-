@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 // import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
@@ -62,7 +64,11 @@ function App() {
       </section>
 
       <Footer />
+       {/* <Routes>
+          <Route path="/read" element={<Read />} />
+        </Routes>  */}
     </div>
+    
   );
 }
 

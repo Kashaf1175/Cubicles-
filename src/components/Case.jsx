@@ -3,7 +3,7 @@ import './Case.css';
 
 function TrustedCompanies() {
 
-  useEffect(() => {
+  useEffect(() => { 
     const services = document.querySelectorAll('.service');
 
     const observer = new IntersectionObserver(
@@ -23,12 +23,41 @@ function TrustedCompanies() {
       services.forEach((service) => observer.unobserve(service));
     };
   }, []);
+  document.addEventListener("DOMContentLoaded", () => {
+  const profilesContainer = document.querySelector(".profiles");
+  const leftArrow = document.querySelector(".arrow.left");
+  const rightArrow = document.querySelector(".arrow.right");
+
+  let currentIndex = 0;
+  const profileWidth = profilesContainer.querySelector(".profile").offsetWidth + 10; // Width + margin
+  const totalProfiles = profilesContainer.children.length;
+
+  // Function to update carousel position
+  function updateCarousel() {
+    const offset = -currentIndex * profileWidth;
+    profilesContainer.style.transform = `translateX(${offset}px)`;
+    console.log(`Moved to index: ${currentIndex}, Offset: ${offset}px`);
+  }
+
+  // Left arrow (move forward)
+  leftArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % totalProfiles; // Loop forward
+    updateCarousel();
+  });
+
+  // Right arrow (move backward)
+  rightArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + totalProfiles) % totalProfiles; // Loop backward
+    updateCarousel();
+  });
+});
+
 
   return ( 
-    
     <div className='testi body-enhanced'>
     <div class="boxes ">
      <div class="title">
+     <div className="line"></div>
       Why customers love
      </div>
      <div class="subtitle">
@@ -110,6 +139,7 @@ function TrustedCompanies() {
     </div>
     <div className='case'>
   <div class="co">
+    <div className='line'></div>
    <h2>
     Our recent
    </h2>
@@ -126,7 +156,7 @@ function TrustedCompanies() {
      <p>
       Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.
      </p>
-     <a class="read-more" href="#">
+     <a class="read-more" href="/read">
       Read more &gt;
      </a>
     </div>
@@ -147,7 +177,7 @@ function TrustedCompanies() {
    </div>
   
   <div class="case-study">
-  <img src="c3.png" alt="" /> 
+  <img src="c3.png" alt="" />  
     <div class="case-study-content">
       
      <h4>

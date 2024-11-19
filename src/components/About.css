@@ -1,5 +1,6 @@
 /* General Styles */
 .body {
+  overflow: hidden;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
   align-items: center;
   height: 100vh;
   font-weight: normal;
-  background-color: #FFFFFF;
+  background: linear-gradient(225deg, #91cffc 0%, #faa4c8 100%);
   overflow-x: hidden; /* Prevents horizontal scrolling */
   /* animation: 3s infinite alternate slide-in; */
 }
@@ -50,7 +51,7 @@ p {
  
 .text-content1 p {
   font-size: 18px;
-  color: #6c757d;
+  
   margin: 20px 0;
   line-height: 1.7;
 }
@@ -61,7 +62,7 @@ p {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #2387EE;  
+  background: linear-gradient(225deg, #0093FF 0%, #F1428C 100%);
   box-shadow: 0px 4px 49px 0px #00000026;
   border: none;
   border-radius: 5px;

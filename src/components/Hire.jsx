@@ -6,6 +6,7 @@ function Features() {
     <div className='feat'>
   <div class="box">
    <div class="headers">
+    <div className='line'></div>
     <h1>
      Featured
     </h1>

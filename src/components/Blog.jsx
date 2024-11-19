@@ -2,11 +2,12 @@ import React from 'react';
 import './Blog.css';
 
 function CaseStudies() {
-  return (
+  return ( 
 
     <div className='way'>
     <div class="container2">
      <div class="hand">
+     <div className='line'></div>
       <h1> 
        Way of building
       </h1>
@@ -14,8 +15,8 @@ function CaseStudies() {
        Great Software
       </h2>
       </div>
-     <div class="content">
-      <div class="boxs">
+     <div className="content">
+      <div className="boxs">
        <div className='t1'>
         <h3>
          Build the right team to scale
@@ -26,13 +27,13 @@ function CaseStudies() {
         <p>
          Our delivery model helps you cut costs and deliver within budget.
         </p>
-        <p class="quote">
+        <p className="gradient-text">
          "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
         </p>
-         <div class="author">
-          <img src="p.png" alt="" />
+         <div className="author">
+          <img src="p2.png" alt="" />
           <div>
-          <div class="name">
+          <div className="name">
            Jeewa Markram
           </div>
           <div class="title">
@@ -59,13 +60,13 @@ function CaseStudies() {
         <p className='sec'>
          Our delivery model helps you cut costs and deliver within budget.
         </p>
-        <p class="quote">
+        <p class="gradient-text">
          "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
         </p>
          <div class="author">
-         <img src="p.png" alt="people" />
-         <div>
-          <div class="name">
+         <img src="p2.png" alt="" />
+         <div className="end">
+          <div className="name">
            Jeewa Markram
           </div>
           <div class="title">
@@ -87,11 +88,11 @@ function CaseStudies() {
         <p>
          Our delivery model helps you cut costs and deliver within budget.
         </p>
-        <p class="quote">
+        <p class="gradient-text">
          "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
         </p>
         <div class="author">
-        <img src="p.png" alt="people" />
+        <img src="p2.png" alt="" />
         <div>
           <div class="name">
            Jeewa Markram

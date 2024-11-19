@@ -6,6 +6,7 @@ function Work() {
     <div className='work'>
     <div className='tech'>
   <div class="container5">
+    <div className='line'></div>
    <h3>
     Our
    </h3>

@@ -7,7 +7,9 @@ function Footer() {
   <div class="footer">
    <div class="contai">
     <div class="logo">
-      <img src="logo.png" alt="" srcset="" />
+         <img src="logo.png" alt="" srcset="" height={30} width={350} />
+    
+
      <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
      </p>

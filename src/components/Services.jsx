@@ -54,23 +54,9 @@ function Services() {
                 <h2>Software Testing Service</h2>
                 <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
             </div>
-            <div class="service">
-                <img src="test.png" alt="" srcset="" />
-                <h2>Software Testing Service</h2>
-                <p>A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
-            </div>
+            
         </div>
-        <div class="pagination">
-            <div class="dots">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="page-info">
-                01 — 05
-            </div>
-        </div>
+        
     </div>
     </div> 
     
