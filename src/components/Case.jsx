@@ -53,6 +53,7 @@ function TrustedCompanies() {
 });
 
 
+
   return ( 
     <div className='testi body-enhanced'>
     <div class="boxes ">
@@ -68,7 +69,7 @@ function TrustedCompanies() {
     </div>
      <div class="carousel">
       <div class="arrow">
-       <img src="left.png" alt="" />
+       <img src="" alt="" />
       </div>
       <div class="profiles">
        <div class="profile">
@@ -95,7 +96,7 @@ function TrustedCompanies() {
          Janet Cosmetics
         </div>
        </div>
-       <div class="profile2">
+       <div class="profile">
         <img src="ep1.png" alt="" />
         <div class="stars">
         <img className='star' src="stars.png" alt="" />
@@ -133,7 +134,7 @@ function TrustedCompanies() {
        </div>
       </div>
       <div class="arrow">
-       <img src="right.png" alt="" />
+       <img src="" alt="" />
       </div>
      </div>
     </div>
@@ -198,4 +199,4 @@ function TrustedCompanies() {
   );
 }
 
-export default TrustedCompanies;
+export default TrustedCompanies; 
