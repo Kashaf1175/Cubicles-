@@ -1,82 +1,62 @@
-header .header {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
-.heads {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* Header Container */
+/* Header Styles */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for small screens */
-  align-items: center; /* Vertically center all elements */
-  justify-content: space-between; /* Spread out logo, nav, and button */
-  padding: 20px;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 110px;
-  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
-.logo {
-  height: 50px;
-  width: auto; /* Maintains aspect ratio */
-}
-
-/* Navigation */
-nav {
-  flex-grow: 1; /* Allow nav to occupy remaining space */
+.logo-container {
   display: flex;
-  justify-content: center; /* Center the navigation links */
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Wrap links on small screens */
-  gap: 20px; /* Add spacing between links */
+  gap: 20px;
+  list-style: none;
 }
 
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
   color: #333;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 500;
-  padding: 8px 12px;
-  transition: color 0.3s, background-color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #007bff;
-  background-color: #f4f4f9;
-  border-radius: 4px;
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  
 }
 
 /* Contact Button */
 .contact-btn {
-  padding: 10px 20px;
-  color: #fff;
-  background: linear-gradient(225deg, #0093FF 0%, #F1428C 100%);
-  border-radius: 4px;
-  cursor: pointer;
+  background: linear-gradient(225deg, #66b3eb 0%, #ff62a3 100%);
+  color: white;
   border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .contact-btn a {
@@ -84,58 +64,29 @@ nav {
   color: white;
 }
 
-.contact-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive Adjustments */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    gap: 20px;
-  }
-
-  nav {
-    justify-content: flex-start; /* Align navigation links to the left */
-    width: 100%; /* Take full width */
+  .hamburger {
+    display: flex; /* Show hamburger icon on small screens */
   }
 
   .nav-links {
-    justify-content: flex-start; /* Left-align links */
-    gap: 15px; /* Adjust spacing for smaller screens */
+    display: none; /* Hide links by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust according to header height */
+    right: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
   }
 
-  .nav-links a {
-    font-size: 1rem; /* Reduce font size */
-    padding: 6px 10px; /* Adjust padding */
-  }
-
-  .contact-btn {
-    width: 100%; /* Full width for smaller screens */
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    height: 60px;
-    padding: 5px; /* Smaller logo for tiny devices */
-  }
-
-  .nav-links {
-    flex-direction: column; /* Stack links vertically */
-    align-items: flex-start; /* Left-align links */
-    gap: 10px;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem; /* Further reduce font size */
-    padding: 5px 8px;
+  .nav-links.open {
+    display: flex; /* Show when menu is toggled */
   }
 
   .contact-btn {
-    padding: 8px 16px;
-    font-size: 1rem;
+    display: none; /* Hide contact button on small screens */
   }
 }

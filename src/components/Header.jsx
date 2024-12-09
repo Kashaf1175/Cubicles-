@@ -1,37 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+  };
+
   return (
-    <div className='heads'>
-    <header className="header">
-      <img className="logo" src="flogo.png" alt="Logo" />
-      <p>Cubicles Tech</p>
-      
-      <nav>
-      <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-        <ul className="nav-links">
-          <li><a href="#about">About us</a></li> {/* Link to Hero Section */}
-          <li><a href="#services">Services</a></li> {/* Link to Services Section */}
-          {/* <li><a href="#trusted-companies">Trusted Companies</a></li> Link to Trusted Companies Section */}
-          <li><a href="#case-studies">Case Studies</a></li> {/* Link to Case Studies Section */}
-          <li><a href="#blog">Blog</a></li> {/* Link to Testimonials Section */}
-          <li><a href="#work">How it Works</a></li> {/* Link to Work Section */}
-          <li><a href="#hire">Hire</a></li> {/* Link to Features Section */}
-          
-           {/* Link to Contact Section */}
-        </ul>
-      </nav>
-      
-      <button className="contact-btn"><a href="#contact">Contact</a></button>
-      
-    </header>
+    <div className="heads">
+      <header className="header">
+        <div className="logo-container">
+          <img className="logo" src="flogo.png" alt="Logo" />
+          <p>Cubicles Tech</p>
+        </div>
+        
+        {/* Hamburger Menu Icon for Small Screens */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* Navigation Links */}
+        <nav>
+          <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#work">How it Works</a></li>
+            <li><a href="#hire">Hire</a></li>
+          </ul>
+        </nav>
+
+        {/* Contact Button */}
+        <button className="contact-btn">
+          <a href="#contact">Contact</a>
+        </button>
+      </header>
     </div>
   );
 }
