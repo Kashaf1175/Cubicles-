@@ -69,7 +69,7 @@
 .profile {
   text-align: center;
   margin: 0 10px;
-  height: 300px;
+  
   
 }
 
@@ -411,3 +411,120 @@
 }
 
 
+/* General styles for profiles */
+.profile {
+  opacity: 0.6; /* Default opacity */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+  margin: 10px; /* Space between profiles */
+  display: inline-block;
+  width: 100%; /* Ensures profile takes full width in smaller viewports */
+}
+
+/* Hover effect for profile */
+.profile:hover {
+  opacity: 1; /* Full opacity on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+  z-index: 10; /* Bring the hovered element on top */
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (Small screens) */
+@media (max-width: 600px) {
+  .profiles {
+    display: block; /* Stack profiles vertically on mobile */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .profile {
+    width: 100%; /* Ensure each profile takes the full width */
+    margin-bottom: 20px; /* Add some space between profiles */
+    opacity: 1; /* Full opacity for clarity */
+    transform: none; /* Remove zoom on hover for mobile */
+  }
+
+  .profile:hover {
+    transform: none; /* Remove zoom effect on mobile */
+  }
+
+  .carousel {
+    text-align: center; /* Center the carousel arrows */
+  }
+
+  .arrow {
+    display: inline-block; /* Ensure arrows are visible */
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .arrow img {
+    width: 30px; /* Resize arrows for small screens */
+  }
+}
+
+/* Tablets (Medium screens) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .profiles {
+    display: flex; /* Flexbox layout for profiles */
+    justify-content: space-around; /* Space out the profiles */
+    overflow-x: hidden;
+  }
+
+  .profile {
+    width: 45%; /* Set profile width to be smaller for tablets */
+    opacity: 0.8; /* Slightly faded on hover */
+    margin: 10px; /* Margin between profiles */
+  }
+
+  .profile:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+
+  .carousel {
+    text-align: center; /* Center the carousel arrows */
+  }
+
+  .arrow img {
+    width: 40px; /* Resize arrows for tablets */
+  }
+}
+
+/* Desktops (Large screens) */
+@media (min-width: 1025px) {
+  .profiles {
+    display: flex; /* Flexbox layout for profiles */
+    justify-content: space-around; /* Space out the profiles */
+  }
+
+  .profile {
+    width: 22%; /* Profiles take up less space on larger screens */
+    opacity: 0.6; /* Default opacity */
+    margin: 15px; /* Margin between profiles */
+  }
+
+  .profile:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.1); /* Strong zoom effect on hover */
+  }
+
+  .carousel {
+    text-align: center; /* Center the carousel arrows */
+  }
+
+  .arrow img {
+    width: 50px; /* Resize arrows for larger screens */
+  }
+}
+
+/* Larger Desktop Screens */
+@media (min-width: 1440px) {
+  .profiles {
+    display: flex; /* Flexbox layout for profiles */
+    justify-content: space-evenly; /* Evenly space out profiles */
+  }
+
+  .profile {
+    width: 20%; /* Even more space between profiles */
+  }
+}
