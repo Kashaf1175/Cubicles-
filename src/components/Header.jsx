@@ -8,6 +8,10 @@ function Header() {
     setIsMenuOpen(!isMenuOpen); // Toggle the menu state
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu
+  };
+
   return (
     <div className="heads">
       <header className="header">
@@ -26,12 +30,12 @@ function Header() {
         {/* Navigation Links */}
         <nav>
           <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#work">How it Works</a></li>
-            <li><a href="#hire">Hire</a></li>
+            <li><a href="#about" onClick={closeMenu}>About us</a></li>
+            <li><a href="#services" onClick={closeMenu}>Services</a></li>
+            <li><a href="#case-studies" onClick={closeMenu}>Research</a></li>
+            <li><a href="#blog" onClick={closeMenu}>Blog</a></li>
+            <li><a href="#work" onClick={closeMenu}>How it Works</a></li>
+            <li><a href="#hire" onClick={closeMenu}>Hire</a></li>
           </ul>
         </nav>
 

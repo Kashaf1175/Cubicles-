@@ -87,7 +87,7 @@ function Work() {
       <div className="tech">
         <div className="container5">
           <div className="line"></div>
-          <h3>Our</h3>
+          <h3>Our</h3> 
           <h2>Tech Stack</h2>
            <div className="tabs">
             <div className="tab">Backend</div>

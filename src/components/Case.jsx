@@ -72,6 +72,7 @@ function TrustedCompanies() {
        <img src="" alt="" />
       </div>
       <div class="profiles">
+        
        <div class="profile">
         <img src="ep1.png" alt="" />
         <div class="stars">

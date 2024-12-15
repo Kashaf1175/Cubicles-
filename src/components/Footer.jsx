@@ -21,27 +21,25 @@ function Footer() {
      <h3>
       Links
      </h3>
-     <a href="#">
+     <a href="#about">
       About Us
      </a>
-     <a href="#">
+     <a href="#services">
       Services
      </a>
-     <a href="#">
-      Case Studies
+     <a href="#case-studies">
+      Research
      </a>
-     <a href="#">
+     <a href="#work">
       How it works
      </a>
-     <a href="#">
+     <a href="#blog">
       Blog
      </a>
-     <a href="#">
-      Careers
+     <a href="#hire">
+      Hire
      </a>
-     <a href="#">
-      Areas We Serve
-     </a>
+    
     </div>
     <div class="contact" href="#contact">
      <h3>
